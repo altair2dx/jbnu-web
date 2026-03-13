@@ -1,0 +1,10 @@
+p {
+    animation: colorChange 1s infinite linear;
+    transition: fill .2s ease;
+}
+    
+@keyframes colorChange {
+    0% {
+        color: #ff2a2a;
+    }
+}
