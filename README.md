@@ -37,3 +37,39 @@ cjy6125@naver.com
 
 <hr> 선 긋기
 
+<!-- 260318 -->
+
+상단에 <!DOCTYPE html>
+<html lang="ko">, <head>, <body>
+
+빈태그 <br>, <meta>, <link>, <img>
+문자 인코딩 <meta charset="UTF-8">
+
+태그 이름은 대소문자를 구분하지 않는다.
+연속된 공백이나 줄바꿈은 하나의 공백으로 처리된다.
+DOCTYPE을 제외한 모든 태그와 속성은 소문자로 작성한다.
+짝을 이루는 태그는 반드시 닫는 태그를 사용한다.
+가독성을 위해 태그 계층 구조에 따라 들여쓰기를 적용한다.
+속성값은 대문자나 특수문자로 시작하지 않도록 한다.
+
+<태그 속성이름="값">내용</태그>
+
+header, nav, article, section, side, footer
+
+특수문자처리
+
+<head>
+<title>
+<meta name="" content="">
+
+<h1> <h6>
+<br>
+
+문단나누기
+<p> : 아래 위에 빈줄
+<div> : 문단 아래 위에 엔터
+<span> : 라인 내의 문단
+
+<pre> : 미리 정형화된 문장
+<blockquote> : 인용문
+<hr> : 수평선
