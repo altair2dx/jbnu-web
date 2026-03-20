@@ -73,3 +73,45 @@ header, nav, article, section, side, footer
 <pre> : 미리 정형화된 문장
 <blockquote> : 인용문
 <hr> : 수평선
+
+<!-- 260320 -->
+
+<ul> : 순서없는 리스트; 속성 type
+<ol> : 순서있는 리스트; 속성 type
+<lh>
+<li>
+
+<dl> : 정의 리스트
+<dt> <dd>
+
+<table> : 표; 속성 border
+<caption> : 제목
+<tr> : table row
+    속성
+    - align left; center; right
+    - valign top; middle; bottom
+<th> : table header
+<td> : table data
+    속성
+    - rowspan: row 합치기
+    - colspan: column 합치기
+    - align
+    - valign
+
+하이퍼링크
+<a href="링크">텍스트</a>
+
+<a href="#이름"></a>
+<a name="이름"></a>
+
+<address> : 문서 저작자의 주소 등을 명시
+
+<img src="url>
+속성
+- alt
+- align
+- height
+- width
+- border
+- hspace
+- vspace
