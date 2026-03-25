@@ -106,7 +106,7 @@ header, nav, article, section, side, footer
 
 <address> : 문서 저작자의 주소 등을 명시
 
-<img src="url>
+<img src="url">
 속성
 - alt
 - align
@@ -115,3 +115,8 @@ header, nav, article, section, side, footer
 - border
 - hspace
 - vspace
+
+<!-- 260325 -->
+
+<audio controls loop src="audio_file"></audio>
+<video controls loop src="video_file"></video>
