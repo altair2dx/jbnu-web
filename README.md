@@ -120,3 +120,23 @@ header, nav, article, section, side, footer
 
 <audio controls loop src="audio_file"></audio>
 <video controls loop src="video_file"></video>
+
+<!-- 260327 -->
+
+<embed src="url" height= width=>
+<object data="url" height= width=></object> 
+
+GET
+- 서버에서 정보를 요청
+- url 뒤에 쿼리 스트링을 붙여 전달
+- 민감한 정보에 적합하지 않음
+- 데이터 길이에 제한이 있음
+POST
+- 서버의 데이터를 수정/생성
+- HTTP Request 헤더에 파라미터를 붙여 전달
+- HTTPS 사용 권장
+- 대용량 데이터 전송 가능
+
+<form>
+<input type="" value="">
+type -> text, password, checkbox, radio, submit, reset
