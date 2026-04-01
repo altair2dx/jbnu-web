@@ -140,3 +140,13 @@ POST
 <form>
 <input type="" value="">
 type -> text, password, checkbox, radio, submit, reset
+
+<!-- 260401 -->
+서버에서 클라이언트의 데이터를 처리하는 법: asp, php, jsp, java, ...
+iis -> asp
+
+<form action="response.asp" method="post">
+    name: <input type="text" name="username" value="HGD"><br>
+    email: <input type="text" name="useremail" value="cjy6125@gmail.com"><br>
+    <input type="submit" value="전송">
+</form>
