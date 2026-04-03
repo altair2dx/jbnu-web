@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="width: fit-content; margin: 0 auto;">입사 지원</h2><br>
+
+    <form action="response2.asp" method="post">
+    <table border="1" style="width: 80%; margin: 0 auto;">
+        <tr>
+            <th>이름</th>
+            <td>
+                <input type="text" name="name" value="">
+            </td>
+        </tr>
+
+        <tr>
+            <th>성별</th>
+            <td>
+                <input type="radio" name="sex" value="Man">Man
+                <input type="radio" name="sex" value="Woman">Woman
+            </td>
+        </tr>
+
+        <tr>
+            <th>학력</th>
+            <td>
+                <input type="checkbox" name="education" value="Elementary">초등학교<br>
+                <input type="checkbox" name="education" value="Middle">중학교<br>
+                <input type="checkbox" name="education" value="High">고등학교<br>
+                <input type="checkbox" name="education" value="University">대학교
+            </td>
+        </tr>
+
+        <tr>
+            <th>혈액형</th>
+            <td>
+                <select name="blood_type">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>O</option>
+                    <option>AB</option>
+                </select>
+            </td>
+        </tr>
+        
+        <tr>
+            <th>주소</th>
+            <td>
+                <textarea name="address" rows="3" cols="50">
+		        </textarea>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div style="width: fit-content; margin: 0 auto;">
+        <input type="submit" value="OK">
+        <input type="reset" value="Cancel">
+    </div>
+    </form>
+
+    
+</body>
+</html>
