@@ -1,0 +1,49 @@
+p {
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#tit {
+    color: blue;
+}
+
+#cont {
+    color: skyblue;
+}
+
+.greet {
+    color: red;
+}
+
+span {
+    border-color: skyblue;
+    border-width: 5px;
+    margin: 10px;
+}
+#dott {
+    border-style: dotted;
+}
+#dash {
+    border-style: dashed;
+}
+#soli {
+    border-style: solid;
+}
+#doub {
+    border-style: double;
+}
+#groo {
+    border-style: groove;
+}
+#ridg {
+    border-style: ridge;
+}
+#inse {
+    border-style: inset;
+}
+#outs {
+    border-style: outset;
+}

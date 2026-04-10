@@ -176,3 +176,40 @@ asp
 <textarea name="" rows="" cols=""></textarea>
 
 <!-- 260408 -->
+
+<!-- 260410 -->
+
+<iframe src="url" height="" width=""></iframe>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<style>
+    선택자 {
+        속성 선언
+    }
+</style>
+
+선택자 : 태그, 클래스, id
+
+color
+font-size
+text-align
+
+
+속성선택자
+[type] {}
+input[type] {}
+input[type="text"] {}
+
+<!-- 가상선택자
+a:link {}
+a:visited {}
+a:active {}
+a:hover {}
+a:focus {} -->
+
+중간고사 : 4/24 14:00 ~ 15:30 
+
+margin border padding
+
+span
