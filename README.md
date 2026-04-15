@@ -213,3 +213,24 @@ a:focus {} -->
 margin border padding
 
 span
+
+<!-- 260415 -->
+
+color: rgb(0, 0, 0)
+
+font-family
+font-weight
+font-style
+font-variant
+font-size
+
+text-align
+text-decoration
+text-transform
+
+background-color
+opacity
+background-image
+background-repeat
+background-position
+background-attachment
