@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        table {
+            width: 500px;
+            height: 150px;
+            text-align: center;
+            border: 2px solid;
+        }
+
+        .red {
+            color: red;
+        }
+
+        img {
+            position: relative;
+            float: right;
+            width: 250px;
+            z-index: -1;
+        }
+
+        .circle {
+            list-style-type: circle;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        #title {
+            text-align: center;
+            width: 70%;
+            margin-bottom: 50px;
+        }
+
+        div {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Resume</h1>
+    <img src="img.jpg">
+    <div>
+        <ul>
+            <lh><h2>Personal Information</h2></lh>
+            <li>Name : Minseok Jo</li>
+            <li class="circle">Age : 33</li>
+            <li>Address : Jeonju</li>
+        </ul>
+
+        <h2>Educational Background</h2>
+        <table border=2>
+            <tr> <th>Period</th> <th>School</th> <th>Department</th> <th>Degree</th> </tr>
+            <tr> <td>2013 ~ 2018</td> <td>Jeonbuk National University</td> <td rowspan=3>Electrical Engineering</td> <td>BS</td> </tr>
+            <tr> <td>2019 ~ 2021</td> <td>Seoul National University</td> <td>MS</td> </tr>
+            <tr> <td>2021 ~ 2024</td> <td>Virginia Tech.</td> <td>Ph.D</td> </tr>
+        </table>
+
+        <ul>
+            <lh><h2>Work Experience</h2></lh>
+            <li>2022/05 ~ 2023/01 Sales, Mc. Donalds</li>
+            <li class="circle">2025/01 ~ 2025/06 Intern, SK Hynix</li>
+            <li>2025/07 ~ 2025/12 Intern, Hyundai</li>
+            <li class="circle red">2026/01 ~ Intern, LS Electric</li>
+        </ul>
+
+        <ul>
+            <lh><h2>Skills</h2></lh>
+            <li>Programming & Applications: Proficient in Excel VBA and MS Office</li>
+            <li class="circle">Languages: Fluent in English, Korean and Espanol</li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>

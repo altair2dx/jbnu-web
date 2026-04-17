@@ -234,3 +234,58 @@ background-image
 background-repeat
 background-position
 background-attachment
+
+
+<!-- 260417 -->
+
+border-radius
+box-shadow: h-offset v-offset blur spread color [inset];
+
+레이아웃 속성
+left, right, top, bottom
+position
+    - static, relative, absolute, fixed
+z-index
+float
+    - left, right, none
+overflow
+    - visible, hidden, scroll, auto
+
+리스트 속성
+list-style-type
+    - disc, circle, square, upper-roman, lower-alpha
+list-style-image
+list-style-position
+
+표 속성
+width, height
+text-align, vertical-align
+border
+padding
+border-collapse
+    - seperate, collapse
+caption-side
+    - top, bottom
+empty-cells
+    - hide, show
+table-layout
+    - auto, fixed
+
+전환효과
+
+<!-- 중간고사 -->
+
+1. 보기에서 맞는 답의 번호를 적으시오.
+===> html tag
+ex) html 문서를 시작할 때 가장 먼저 쓰는 태그?
+
+2. 보기에서 맞는 답의 번호를 적으시오.
+===> css style
+ex) 글자 색을 적용하려면 어떤 속성을 사용해야 하는가?
+
+3. html 문서 작성
+sample을 보고 작성
+태그와 스타일은 1, 2번 보기에서 사용
+
+4/24 14:00~15:00
+4/22 휴강

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 30px;
+            height: 100px;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgb(0, 0, 50, 0.5);
+            overflow:scroll;
+        }
+
+        img {
+            position: relative;
+            float: right;
+            z-index: -1;
+        }
+
+        li.a {
+            list-style-type: circle;
+        }
+
+        li#c {
+            list-style-type: square;
+        }
+    
+        .insd {
+            list-style-position: inside;
+        }
+
+        table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        span {
+            color: blue;
+            transition: background-color border 1s;
+        }
+
+        span:hover {
+            background-color: skyblue; border: solid red 5px;
+        }
+        
+    </style>
+</head>
+<body style="height: 200vh;">
+    <div>background<br>background<br>background</div>
+    <img src="img.jpg">
+    <p>Hello Kim</p>
+    <ul>
+        <lh>과일이름</lh>
+        <li class="a">apple</li>
+        <li class="b">mango</li>
+        <li id="c">grape</li>
+    </ul>
+    <ol class="insd">
+        <lh>음식이름</lh>
+        <li>김밥</li>
+        <li>라면</li>
+        <li>우동</li>
+    </ol>
+    <table border="1">
+        <tr>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+
+    </table>
+    <span>전환 효과</span>
+</body>
+</html>
