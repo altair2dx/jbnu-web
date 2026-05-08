@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 80%;
+            text-align: center;
+            background-color: aliceblue;
+            table-layout: fixed;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        n = 5;
+        m =  1 * n;
+        cm = 100 * n;
+        yd = 1.0936 * n;
+        ja = 3.3 * n;
+        gan = 0.55 * n;
+        document.write(
+            `<table border="1" align="center">
+                <caption>길이 환산표</caption>
+                <tr>
+                    <th>미터</th>
+                    <th>센티미터</th>
+                    <th>야드</th>
+                    <th>자</th>
+                    <th>간</th>
+                </tr>
+                <tr>
+                    <td>${m}</td>
+                    <td>${cm}</td>
+                    <td>${yd}</td>
+                    <td>${ja}</td>
+                    <td>${gan}</td>
+                </tr>
+            </table>
+            <br>`
+        );
+
+        kg = 1;
+        t = 0.001 * kg;
+        oz = 35.273 * kg;
+        lb = 2.20459 * kg;
+        geun = 1.6666 * kg;
+        document.write(
+            `<table border="1" align="center">
+                <caption>무게 환산표</caption>
+                <tr>
+                    <th>킬로그램</th>
+                    <th>톤</th>
+                    <th>온스</th>
+                    <th>파운드</th>
+                    <th>근</th>
+                </tr>
+                <tr>
+                    <td>${kg}</td>
+                    <td>${t}</td>
+                    <td>${oz}</td>
+                    <td>${lb}</td>
+                    <td>${geun}</td>
+                </tr>
+            </table>`
+        );
+    </script>
+</body>
+</html>

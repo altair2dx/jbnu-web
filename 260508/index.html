@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+        n = 15;
+        k = 7;
+        p = 3;
+        a = 23;
+        b = 5;
+
+        document.write("<h1>");
+
+        ans = n + k;
+        document.write(`${n} + ${k} = ${ans} <br>`);
+
+        ans = n - k;
+        document.write(`${n} - ${k} = ${ans} <br>`);
+
+        ans = n * k;
+        document.write(`${n} * ${k} = ${ans} <br>`);
+
+        ans = n / k;
+        document.write(`${n} / ${k} = ${ans} <br>`);
+
+        ans = n ** p;
+        document.write(`${n} ** ${p} = ${ans} <br>`);
+
+        ans = a % b;
+        document.write(`${a} % ${b} = ${ans} <br>`);
+
+        ans = n++;
+        document.write(`n = ${n-1} --> ans = n++; --> ans = ${ans}; n = ${n} <br>`);
+        n--;
+
+        ans = ++n;
+        document.write(`n = ${n-1} --> ans = n++; --> ans = ${ans}; n = ${n} <br>`);
+        n--;
+
+        ans = a < n;
+        document.write(`${a} < ${n} = ${ans} <br>`)
+
+        ans = a > n;
+        document.write(`${a} > ${n} = ${ans} <br>`)
+
+        ans = a <= n;
+        document.write(`${a} <= ${n} = ${ans} <br>`)
+
+        ans = a >= n;
+        document.write(`${a} >= ${n} = ${ans} <br>`)
+
+        ans = a == n;
+        document.write(`${a} == ${n} = ${ans} <br>`)
+
+        ans = a != n;
+        document.write(`${a} != ${n} = ${ans} <br>`)
+
+        document.write("</h1>");
+    </script>
+</body>
+</html>

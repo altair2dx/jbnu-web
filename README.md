@@ -12,3 +12,21 @@ javascript
 // 한 줄 주석
 
 - 변수
+
+자료형
+- number
+- string
+- boolean
+- null
+- array, object
+- undefined
+
+비교 연산자
+- <, >, <=, >=, ==, !=, ====, !==
+
+논리 연산자
+- !, || , &&
+
+대입 연산자
+- +=, -=, *=, /=, %=, **=
+
