@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        h = 172;
+        w = 63;
+        bmi = w / (h / 100) ** 2;
+        if (bmi >= 35) ans = "3단계 비만";
+        else if (bmi >= 30) ans = "2단계 비만";
+        else if (bmi >= 25) ans = "1단계 비만";
+        else if (bmi >= 23) ans = "과체중";
+        else if (bmi >= 18.5) ans = "정상";
+        else ans = "저체중";
+        document.write(`키: ${h}, 몸무게: ${w} `);
+        document.write(`BMI: ${bmi.toFixed(2)}, 분류: ${ans}`);
+    </script>
+</body>
+</html>
