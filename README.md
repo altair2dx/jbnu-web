@@ -39,3 +39,18 @@ else if
 else
 
 .toFixed(2) : 소숫점 아래 2번째 자리까지
+
+
+<!-- 260515 -->
+
+switch () {
+    case 1:
+    case 2:
+    default:
+}
+
+for(초기식; 조건식; 증감식)
+for (key of object)
+for (key in object)
+
+const abc = [];

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        table {
+            width: 500px;
+            text-align: center;
+            background-color: aliceblue;
+            table-layout: fixed;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        n = 5
+        const tLen = ["ja", "cm", "inh", "yd", "gan"];
+        const wtLen = [1, 30.303, 11.93, 0.3314, 0.1667];
+        const vLen = [0, 0, 0, 0, 0];
+        for (i=0; i<tLen.length; i++) {
+            vLen[i] = n * wtLen[i];
+        }
+
+        m = 10
+        const tWeight = ["lb", "kg", "oz", "gr", "geun"];
+        const wtWeight = [1, 0.45359, 16, 7000, 0.756];
+        const vWeight = [0, 0, 0, 0, 0];
+        for (i=0; i<tWeight.length; i++) {
+            vWeight[i] = m * wtWeight[i];
+        }
+
+
+        document.write(
+            `<table border="1" align="center">
+                <caption> 길이변환표 </caption>
+                <tr>`
+        );
+        for (i=0; i<tLen.length; i++) {
+            document.write(
+                `<th> ${tLen[i]} </th>`
+            );
+        }
+        document.write(`</tr>`);
+
+        document.write(`<tr>`);
+        for (i=0; i<tLen.length; i++) {
+            document.write(
+                `<td> ${vLen[i].toFixed(2)} </td>`
+            );
+        }
+        document.write(`</tr></table>`);
+
+        document.write(`<br>`);
+        
+        document.write(
+            `<table border="1" align="center">
+                <caption> 무게변환표 </caption>
+                <tr>`
+        );
+        for (i=0; i<tWeight.length; i++) {
+            document.write(
+                `<th> ${tWeight[i]} </th>`
+            );
+        }
+        document.write(`</tr>`);
+
+        document.write(`<tr>`);
+        for (i=0; i<tWeight.length; i++) {
+            document.write(
+                `<td> ${vWeight[i].toFixed(2)} </td>`
+            );
+        }
+        document.write(`</tr></table>`);
+    </script>
+</body>
+</html>
