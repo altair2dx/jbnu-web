@@ -53,4 +53,12 @@ for(초기식; 조건식; 증감식)
 for (key of object)
 for (key in object)
 
-const abc = [];
+const arr_name = []; --> 배열을 새로 선언할 수 없음
+var arr_name = [];
+arr_name = [];
+
+Math.random()
+Math.round(x)
+Math.trunc(x)
+
+.push()
