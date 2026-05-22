@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        // i = 1;
+        // do {
+        //     document.write(`${i} `); i++;
+        // } while (i<10)
+
+        // ans = confirm("Go on ??");
+        // alert(`${ans} `);
+
+        n = parseInt(prompt("Enter Number:", 5));
+        arr = [];
+        
+        for (i=0; i<n; i++) {
+            arr.push(Math.trunc(Math.random() * 30 + 1));
+        }
+        document.write(`${arr} <br>`);
+
+        for (i=0; i<arr.length; i++) {
+            if (arr[i] >= 20) continue;
+            document.write(`${arr[i]} `);
+        }
+    </script>
+</body>
+</html>

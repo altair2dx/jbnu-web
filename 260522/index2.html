@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        function greet() {
+            document.write(`Hello <br>`);
+        }
+
+        function greet1(nm) {
+            document.write(`Hello ${nm} <br>`);
+        }
+
+        function greet2(m, name) {
+            document.write(`${m} ${name} <br>`);
+        }
+
+        function rtn() {
+            return 123;
+        }
+
+        function sq(k) {
+            return k*k;
+        }
+
+        function ft(a, b) {
+            val = a**2 + b;
+            return val;
+        }
+    </script>
+    <script>
+        greet();
+        greet1("Kim");
+        greet1("Park");
+        greet2("Hello", "Kim");
+        greet2("Hi", "Park");
+        a = rtn(); document.write(`${a} <br>`);
+        b = sq(3.14); document.write(`${b} <br>`);
+        c = ft(5, 3); document.write(`${c} <br>`);
+    </script>
+</body>
+</html>

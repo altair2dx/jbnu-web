@@ -59,6 +59,33 @@ arr_name = [];
 
 Math.random()
 Math.round(x)
-Math.trunc(x)
+Math.trunc(x) -> 소숫점 이하 버림
 
 .push()
+
+<!-- 260520 -->
+
+while ()
+
+<!-- 260522 -->
+
+do {
+    ...
+} while ()
+
+-> 조건식을 나중에 보기 때문에 무조건 한 번은 실행됨
+
+break
+
+contiune
+
+함수 -> 특정 기능을 수행하는 프로그램
+- 내장 함수
+- 사용자 정의 함수
+
+alert
+confirm
+prompt
+
+parseFloat
+parseInt
