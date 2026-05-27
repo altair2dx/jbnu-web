@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        function makeArray (n) {
+            arr = [];
+            for (i=0; i<n; i++) arr.push(Math.trunc(Math.random()*99 + 1));
+            return arr;
+        }
+    </script>
+    <script>
+        a = makeArray(5);
+        document.write(`${a} <br>`);
+        k = a.pop();
+        document.write(a, k);
+    </script>
+</body>
+</html>

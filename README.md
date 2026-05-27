@@ -89,3 +89,14 @@ prompt
 
 parseFloat
 parseInt
+
+<!-- 260527 -->
+
+클래스 class
+객체 object
+속성 -> 변수, 행위 -> 함수/메소드
+
+push
+pop
+
+연관배열        
