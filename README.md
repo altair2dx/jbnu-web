@@ -96,7 +96,22 @@ parseInt
 객체 object
 속성 -> 변수, 행위 -> 함수/메소드
 
+const user = new Object()
+
 push
 pop
 
-연관배열        
+연관배열
+2차원 배열
+
+<!-- 260529 -->
+
+Math.E Math.PI
+
+string
+string index
+string.length
+
+.charAt(n) : n번째 문자열
+.trim(): 양 옆 공백 제거
+.split("sep", limit)

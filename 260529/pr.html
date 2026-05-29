@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        table {
+            width: 500px;
+            text-align: center;
+            background-color: aliceblue;
+            table-layout: fixed;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function unit2m(n, unit) {
+            if (unit == "cm") n *= 0.01;
+            else if (unit == "inch") n *= 0.0254;
+            else if (unit == "ft") n *= 0.3048;
+            else if (unit == "m" ) n = n;
+            else n = 0;
+            return n
+        }
+
+        function makeTable(units, values) {
+            document.write(
+                `<table border="1" align="center">
+                    <caption> 길이변환표 </caption>
+                    <tr>`
+            );
+            for (i=0; i<values.length; i++) {
+                document.write(
+                    `<th> ${units[i]} </th>`
+                );
+            }
+            document.write(`</tr>`);
+
+            document.write(`<tr>`);
+            for (i=0; i<values.length; i++) {
+                document.write(
+                    `<td> ${values[i].toFixed(2)} </td>`
+                );
+            }
+            document.write(`</tr></table>`);
+
+            document.write(`<br>`);
+        }
+
+        const units = ["cm", "m", "inch", "ft"];
+        const wts = [100, 1, 39.37, 3.2808];
+        const values = [0, 0, 0, 0];
+
+        input = prompt("길이와 단위 입력 : ", "1 m");
+
+        a = input.trim().split(" ", 2);
+        n = parseInt(a[0]); unit = a[1];
+        m = unit2m(n, unit);
+        for (i=0; i<values.length; i++) {
+            values[i] = m * wts[i]
+        }
+
+        makeTable(units, values)
+    </script>
+</body>
+</html>
