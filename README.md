@@ -115,3 +115,48 @@ string.length
 .charAt(n) : n번째 문자열
 .trim(): 양 옆 공백 제거
 .split("sep", limit)
+
+<!-- 260605 -->
+
+DOM => HTML 문서의 구조 저장 => 관리/제어 - 페이지 내용 변경, 동적
+
+document.getElementById
+document.getElementsByBygName
+document.getElemenstByClassName
+
+element.innerHTML = new html content
+element.attribute = new value
+element.style.property = new style
+
+getAttribute("attr")
+setAttribute("attr", "new value")
+
+document.createElement
+document.removeChild
+document.appendChild
+document.replaceChild
+
+click
+dblclick
+mousedown
+mousemove
+mouseout
+mouseover
+mouseup
+
+keydown
+keypress
+keyup
+
+change
+focus
+blur
+select
+
+load
+resize
+scroll
+
+이벤트 적용
+- attribute에 on이벤트이름="fnc();"
+- element.addEventListener("이벤트이름", fnc);

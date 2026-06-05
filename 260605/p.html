@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <ol>
+        <lh id="ft">과일 이름</lh>
+        <li id="app">사과</li>
+        <li id="mng">망고</li>
+        <li id="grp">포도</li>
+    </ol>
+    
+    <script>
+        function evnt1() {
+            alert("Title double clicked");
+        }
+
+        function evnt2() {
+            alert("Apple Clicked");
+        }
+
+        function evnt3() {
+            alert("MANGO");
+        }
+
+        function evnt4() {
+            alert("GRAPE")
+        }
+
+        t1 = document.getElementById("ft");
+        t1.addEventListener("dblclick", evnt1);
+        
+        t2 = document.getElementById("app");
+        t2.addEventListener("click", evnt2);
+        
+        t3 = document.getElementById("mng");
+        t3.addEventListener("mouseout", evnt3);
+        
+        t4 = document.getElementById("grp");
+        t4.addEventListener("mouseover", evnt4);
+    </script>
+</body>
+</html>

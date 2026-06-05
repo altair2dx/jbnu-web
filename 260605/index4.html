@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <a href="https://www.naver.com">Naver</a>
+    <ol>
+        <lh id="olt">fruits name</lh>
+        <li class="frts">apple</li>
+        <li class="frts">mango</li>
+        <li>grape</li>
+    </ol>
+<script>
+    t = document.getElementsByTagName("a");
+    document.write(t[0].innerHTML)
+    document.write(t[0].getAttribute("href"))
+    t[0].innerHTML = "Nate";
+    t[0].setAttribute("href", "https://www.nate.com");
+</script>
+</body>
+</html>

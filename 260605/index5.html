@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<p id="id1">DOM을 통한 HTML 문서 접근</p>
+<script>
+    e = document.createElement("span");
+    e.innerHTML = "요소의 생성"
+    e.style.color = "blue";
+    e.style.border = "solid 5px red";
+    document.getElementById("id1").appendChild(e);
+</script>
+</body>
+</html>
