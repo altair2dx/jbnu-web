@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form>
+        <input type="text" id="txt" value="0"><br>
+        <input type="text" id="txtCopy" value="0"><br>
+        <input type="button" id="sub" value="OK">
+    </form>
+    <script>
+        function prtCon() {
+            t = document.getElementById("txt");
+            t1 = document.getElementById("txtCopy");
+            t1.value = t.value;
+        }
+        e = document.getElementById("sub");
+        e.addEventListener("click", prtCon);
+    </script>
+</body>
+</html>

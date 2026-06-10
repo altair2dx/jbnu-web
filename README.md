@@ -136,8 +136,8 @@ document.removeChild
 document.appendChild
 document.replaceChild
 
-click
-dblclick
+**click**
+**dblclick**
 mousedown
 mousemove
 mouseout
@@ -148,7 +148,7 @@ keydown
 keypress
 keyup
 
-change
+**change**
 focus
 blur
 select
@@ -160,3 +160,9 @@ scroll
 이벤트 적용
 - attribute에 on이벤트이름="fnc();"
 - element.addEventListener("이벤트이름", fnc);
+
+<!-- 260610 -->
+
+일반 태그 -> innerHTML
+폼 태그 -> value
+체크박스 -> checked

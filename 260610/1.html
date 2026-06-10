@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        #idev {
+            border: solid 5px blue;
+            padding: 10px;
+            margin-top: 10px;
+            font: 40px bold;
+        }
+    </style>
+    <p id="idev">변경 시험</p>
+    <script>
+        function mclick() {
+            document.getElementById("idev").innerHTML="마우스 클릭";
+        }
+        function mout() {
+            document.getElementById("idev").innerHTML="변경 시험";
+        }
+        e = document.getElementById("idev");
+        e.addEventListener("click", mclick);
+        e.addEventListener("mouseout", mout);
+    </script>
+</body>
+</html>

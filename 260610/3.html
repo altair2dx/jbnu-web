@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form>
+        Enter Radius : <input type="text" id="txt" value="0">
+        Circle Area : <input type="text" id="txtCopy" value="0"><br>
+        <input type="button" id="sub" value="OK">
+    </form>
+    <script>
+        function prtCon() {
+            t = document.getElementById("txt");
+            t1 = document.getElementById("txtCopy");
+            r = parseFloat(t.value);
+            s = 3.14 * r * r;
+            t1.value = s;
+        }
+        e = document.getElementById("sub");
+        e.addEventListener("click", prtCon);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form>
+        좋아하는 과일을 고르시오
+        <input type="checkbox" value="apple">apple
+        <input type="checkbox" value="cherry">cherry
+        <input type="checkbox" value="grape">grape<br>
+        <input type="button" id="sub" value="OK"><br>
+        <input type="text">
+    </form>
+    <script>
+        function choice() {
+            inp = document.getElementsByTagName("input");
+            msg = "";
+            for (i=0; i<inp.length-2; i++) {
+                if (inp[i].checked) {
+                    msg += inp[i].value + " ";
+                }
+            }
+            inp[4].value = msg
+        }
+        e = document.getElementById("sub");
+        e.addEventListener("click", choice);
+    </script>
+</body>
+</html>
