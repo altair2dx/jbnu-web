@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<body>
+    <form>
+        length : <input type="text" value="0" onchange="change()">
+        unit : <select onchange="change()">
+            <option>cm</option>
+            <option>m</option>
+            <option>inch</option>
+            <option>feet</option>
+            <option>ja</option>
+        </select>
+    </form><br>
+
+    <style>
+        form {
+            text-align: center;
+        }
+
+        table {
+            width: 500px;
+            text-align: center;
+            background-color: aliceblue;
+            table-layout: auto;
+        }
+
+        th, td {
+            width: 100px;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        const tit = ["cm", "m", "inch", "feet", "ja"];
+        const wt = [100, 1, 39.37, 3.2808, 3.3];
+
+        function computeM(n, ut) {
+            if (ut == "cm") n *= 0.01;
+            else if (ut == "inch") n *= 0.0254;
+            else if (ut == "feet") n *= 0.3048;
+            else if (ut == "ja") n *= 0.30303;
+            else if (ut == "m" ) n = n;
+            else n = 0;
+            return n;
+        }
+
+        function computeEachUnit(m) {
+            arr = [];
+            for (i=0; i<wt.length; i++) {
+                arr.push(m*wt[i]);
+            }
+            return arr;
+        }
+
+        function makeTable(tit, wt) {
+            document.write(
+                `<table border="1" align="center">
+                    <caption> 길이변환표 </caption>
+                    <tr>`
+            );
+            for (i=0; i<wt.length; i++) {
+                document.write(
+                    `<th> ${tit[i]} </th>`
+                );
+            }
+            document.write(`</tr>`);
+
+            document.write(`<tr>`);
+            for (i=0; i<wt.length; i++) {
+                document.write(
+                    `<td> ${wt[i].toFixed(2)} </td>`
+                );
+            }
+            document.write(`</tr></table>`);
+        }
+
+        function changeTable(tds) {
+            e = document.getElementsByTagName("td");
+            for (i=0; i<e.length; i++) {
+                e[i].innerHTML = tds[i].toFixed(2);
+            }
+        }
+
+        function change() {
+            it = document.getElementsByTagName("input");
+            n = parseFloat(it[0].value);
+            slt = document.getElementsByTagName("select")
+            ut = slt[0].value;
+
+            m = computeM(n, ut);
+            tds = computeEachUnit(m);
+
+            changeTable(tds);
+        }
+
+        makeTable(tit, wt);
+    </script>
+</body>
+</html>
